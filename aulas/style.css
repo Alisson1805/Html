@@ -1,0 +1,41 @@
+
+.body{
+    height: 100vh;
+    margin: 0;
+}
+h1{
+    color: white;
+    background: green; /* fundo*/
+    font-size: 156px; /* tamanho do fundo*/
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    
+}
+
+h2{
+    width: 100px; /*largura*/
+    height: 30px; /*altura*/
+    display: inline;
+    margin: 100px;
+     
+}
+body{
+
+    background-image: url(https://www.publicdomainpictures.net/pictures/200000/nahled/plain-blue-background.jpg);
+}
+
+#gameplay{
+    color: black;
+    font-size: 30px; /* tamanho do fundo*/
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+button{
+    font-size: 10px; /* tamanho do fundo*/
+}
+
+
+

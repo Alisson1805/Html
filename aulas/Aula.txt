@@ -1,0 +1,674 @@
+
+MDN sempre pesquisar
+
+<h1> Titulo
+<a> Links
+<Input> barra digitavel /disable
+<p> paragrafo
+<em> enfase
+<div> agrupar
+<br> quebra linha
+<strong>: negrito
+<b> negrito
+<lorem> cria texto
+& caracteres especiais
+<!- comentarios
+
+======
+
+Atirbutos globais mais utilizados
+
+class
+contenteditable
+data-*
+hidden
+id
+style
+tabindex
+title
+
+==== Iniciando HTML
+
+<! DOCTYPE: navegadors identificar html 5
+<HTML>
+Usuario n ver
+HEAD> (cabeça) CONTER INFORMAÇÕES IMPORTANTES PARA PAG
+meta (caracteres) > charset (agrupamento do caracteres) "utf-8" cobre maior quantidade de caracteres
+
+Usuario ver
+BODY> (corpo) conteudo visual
+
+! preenche tudo sozinho
+
+<!DOCTYPE html> — diz ao navegador que estamos a trabalhar com HTML 5.<html></html> — o próprio HTML, elemento raiz, o inicio da cadeia.<head></head> — contém configurações importantes para página, mas não ainda o que o usuário vai ver.
+<meta> — onde vai representar vários tipos de metadados da página.
+
+<title></title> — título da página.<body></body> — onde haverá conteúdo visual da página.
+Se quiser facilitar tudo digitando ! o emmet irá completar automaticamente.
+
+=================== lista
+
+li> lista
+OL> ordenação numerica
+ul> 
+
+==== citações
+<blockquote></blockquote> — para uma citação que você queira deixa maior, tendo uma estilização mais diferente.
+<code></code> — mostra que é um código
+
+cite — atributo usado para citar a url.
+
+<cite></cite> — tag usada para colocar o citar link direto no texto.
+
+<q></q> — citação curtas com aspas.
+
+===== abreviação
+
+<abbr>
+
+<p>Usamos <abbr title="Hypertext Markup Language">HTML</abbr>  para estruturar nossos documentos da web.</p>
+
+======= detalhes da pessoa que escreveu html
+
+<address>
+
+<address>
+    <p>Mayk Brito <br>
+    <strong>Campo Grande, MS</strong>
+    </p>
+</address>
+
+
+
+
+================== Descrições
+
+<dl></dl> — tag para lista de descrições.<dt></dt> — tag para o termo da descrição.<dd></dd> — tag para descrição.
+
+===== representação codigo
+
+<code></code> — muda a cor do conteúdo para representar código.
+
+<pre></pre> — tag para criar um bloco de código, mantém os espaços em branco.
+
+
+======= elementos genericos
+
+<div></div> — tag usada para agrupar conteúdo.
+<span></span> — tag usada para agrupar texto, em uma ideia mais de linha.
+
+==== navegar pelos diretorios
+
+<a href="hyperlinks.html">arquivo na pasta anterior</a>
+<br>
+<a href="./urls-caminhos.html">arquivo no diretório raiz</a>
+<br>
+<a href="urls-caminhos.html">arquivo na mesma pasta</a>
+<br>
+<a href="outros/conteudo-a-element.html">arquivo na pasta outros, que está na pasta anterior</a>
+
+
+============ Tabelas, usados para acessibilidade
+
+Table>
+th> cabeçalho/coluna
+tr> linha
+TD> descrição das colunas
+
+THEAD>
+TBODY>
+TFOOT> RODAPÉ
+caption> descreve o que a tabela está fazendo vem logo em primeiro
+
+== Tabela complexa
+
+th rowspan antes da > = ocupar linhas
+th colspan ocupar colunas
+
+=== Melhorando o aspecto
+
+Depois do caption 
+
+colgroup > agrupar colunas
+col indicando as colunas
+style="background-color:
+col span separado dentro do col style
+
+=== melhorar acessibilidade
+
+scope = em todos TH (cabeçalho ou coluna)
+scope colgroup = agrupamento de coluna
+scope col = coluna 
+scope row = linha
+
+================== Cabeçalho
+
+head> aprte não exibida no navegador
+
+Metas
+
+Link rel = relacionamento
+
+Meta name author > autor
+description > descrição
+Meta robots: index e follow
+meta property: 
+
+
+
+
+********************************* AULA CSS
+
+H1 (referencia) abre chavess {}
+proriedade : valor ;
+
+electors: Nesse caso o h1, que vai buscar no HTML a tag h1 e aplicar as mudanças.
+
+Declaration: As chaves e tudo dentro delas.
+
+Properties: As coisas a serem alteradas.
+
+Property values: Os novos valores que estamos atribuindo a tais propriedades.
+
+        color: blue; cor
+	font-size: 60px; tamanho
+	background: gray; fundo
+
+Button> botão
+
+Pode add CSS pelo style na linha
+Pelo Link No head
+pelo @import 
+
+===== at rules
+
+São regras relacionadas ao comportamento do CSS, começa com um sinal de @ seguido do identificador e do valor.
+
+São as seguintes:
+@import serve para incluir um CSS externo.
+@media são regras condicionais para vários dispositivos.
+@font-face é para colocar fontes externas.
+@keyframes serve para as animations do CSS.
+
+==== shorthand
+
+ /* background properties */
+    background-color: #000;
+    background-image: url(images/bg.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    /* background shorthand*/
+    background: #000 url(images/bg.gif) no-repeat left top;
+
+    /* font properties */
+    font-style: italic;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 1.2;
+    font-family: Arial, sans-serif;
+
+    /* font shorthand */ 
+    font: bold italic .8em/1.2 Arial, sans-serif;
+}
+Algumas das características do shorthand:
+Não irá considerar propriedades anteriores, ou seja, caso faça um shorthand, apenas ele será considerado, quaisquer propriedades anteriores serão substituídas pelas do shorthand.
+
+Os valores que não forem especificados irão assumir o valor padrão.
+
+Por fim, geralmente, a ordem descrita não importa, mas, caso haja muitas propriedades com valores semelhantes, poderemos encontrar problemas.
+
+============  Funções
+
+
+Descrição
+Um tipo de valor existente no CSS, é estruturado com um nome seguido de abre e fecha parênteses.
+
+Recebe um argumento, que são seus valores.
+
+Um exemplo de função é:
+
+color: rgb(255,0,100);
+
+============ DevTools F12
+
+Vendor prefixes
+
+
+
+Descrição
+São coisas que permitem que browsers adiocionem features a fim de colocar em uso alguma novidade que vemos no CSS.
+
+Exemplos:
+p {
+	-webkit-background-clip: text; /*Chrome, Safari, iOS e Android*/
+	-moz-background-clip: text; /* Mozilla (Firefox) */
+	-ms-background-clip: text; /* Internet Explorer ou Edge*/
+	-o-background-clip: text; /* Opera */
+Você também pode consultar se a feature pode ser utilizada através dos sites:
+https://ireade.github.io/which-vendor-prefix
+
+https://caniuse.com
+
+========= <length> - é um dos mais usados no CSS e representa um valor de distância: px, em, vw
+<angle> - representa um ângulo: deg, rad, turn
+<time> - representa um tempo: s, ms
+<resolution> - representa resoluções para dispositivos: dpi
+
+========= Porcentagem css
+li {
+    font-size: 80%; ou font-size: 50px;
+}
+
+width: px largura
+height: px altura
+
+== posição
+
+<position>
+
+Representa um conjunto de coordenadas 2
+top, right, bottom, left e center
+Usado para alguns tipos de propriedades como o background-position
+Não confundir com a propriedade position
+
+=== funções
+
+Exemplos de funções do CSS:
+
+rgb()
+hsl()
+url()
+calc()
+Dentro dos parêntesis são passados argumentos
+
+Link da documentação do MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions
+
+====Strings e identificadores
+
+Descrição
+Strings: texto envolto em aspas
+.box::after {
+	content: "Isso é uma string"
+} 
+
+==== Caixas
+
+Propriedades da caixa
+Tamanho (largura x altura) → width | height
+Conteúdo → content
+Bordas → border
+Preenchimento interno → padding
+Espaços fora da caixa → margin
+
+* {
+   box-sizing: border-box;
+}
+
+referencia {
+   width: 100px; 
+   height: 100px;
+   border: 1px solid red;
+   margin: 10%;
+}
+
+== margem
+
+/* margin-top | margin-right | margin-bottom | margin-left */
+
+margin: 12px 16px 10px 4px; /* TOP = 12px | RIGHT = 16px | BOTTOM = 10px | LEFT = 4px */
+margin: 12px 16px 0; /* TOP = 12px | RIGHT = 16px | BOTTOM = 0px | LEFT = 16px */
+margin: 8px 16px; /* TOP = 8px | RIGHT = 16px | BOTTOM = 8px | LEFT = 16px */
+margin: 8px; /* TOP = 8px | RIGHT = 8px | BOTTOM = 8px | LEFT = 8px */
+
+
+==== O padding é o preenchimento interno da caixa.
+
+A propriedade padding pode ser escrita como nos formatos apresentados abaixo:
+padding-top | padding-right | padding-bottom | padding-left
+
+padding: 12px 16px 10px 4px; /* TOP = 12px | RIGHT = 16px | BOTTOM = 10px | LEFT = 4px */
+padding: 12px 16px 0; /* TOP = 12px | RIGHT = 16px | BOTTOM = 0px | LEFT = 16px */
+padding: 8px 16px; /* TOP = 8px | RIGHT = 16px | BOTTOM = 8px | LEFT = 16px */
+padding: 8px; /* TOP = 8px | RIGHT = 8px | BOTTOM = 8px | LEFT = 8px */
+
+==== Border-outline
+
+São as bordas da caixa
+
+Documentação do MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/border
+
+value: <border-style> | <border-width> | <border-color>
+
+style: solid | dotted | dashed | double | groove | ridge | inset | outset
+width: <length>
+color: <color>
+div {
+	/* shorthand */
+	border-top: solid 2px; /* top | right | bottom | left */
+
+	/* style */
+	border: solid;
+
+	/* width <length> | style */
+	border: 2px dotted;
+
+	/* style | color */
+	border: outset #f33;
+
+	/* width | style | color */
+	border: medium dashed green;
+
+}
+
+E o outline?
+O outline é muito semelhante ao border, mas difere em 4 sentidos:
+Não modifica o tamanho da caixa, pois não é parte do Box Model
+Poderá ser diferente de retangular
+Não permite ajuste individuais
+Mais usado pelo user agent para acessibilidade
+
+=== Cores
+
+Usamos CSS para alterar cores do nosso documento.
+
+Tipos
+background-color (para caixas)
+color (para textos)
+border-color (para caixas)
+outros
+Valores
+Podemos definir valores por:
+palavra-chave (blue, transparent)
+hexadecimal (#990011)
+funções: rgb, rgba, hsl, hsla
+
+
+=== Hexadecimal
+Descrição
+Nessa aula vamos aprender a trabalhar com valores hexadecimal
+
+/*<hex-color> values 0-9 e A-F*/
+color: #090; /* RED, GREEN, BLUE */
+color: #009900;
+color: #090a;
+color:#009900aa;
+
+====RGB
+
+Descrição
+RGB → Red, Green e Blue
+O alpha representa a transparência da cor
+/*<rgb()> values */
+color: rgb(34, 12, 64, 0.6) /* 0-255 */
+color: rgba(34, 12, 64, 0.6)
+
+====HSL
+
+Descrição
+HSL → Hue - Saturation - Lightness
+
+color: hsl(180, 100%, 50%, 60%) cor, saturação e luz
+color: hsla(180, 100%, 50%, 60%)
+
+===Global values
+
+Descrição
+Nessa aula vamos ver sobre os valores globais da propriedade color.
+
+/* Global values */
+color: inheritr; /* Herda a cor do elemento anterior */
+color: initial; /* Volta a sua cor inicial */
+color: unset; /* Pega a cor do contexto */
+
+==== Conclusão cor
+
+Descrição
+Entendendo esses princípios e com a prática, fica cada vez mais fácil entender como aplicar cores no CSS.
+
+Referência
+https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+
+==== background
+
+A propriedade background-color define a cor de fundo do elemento selecionado.
+
+HTML
+
+<header>
+
+</header>
+<main>
+    <h1>Evolua rápido com a tecnologia</h1>
+    <p>Junte-se a milhares de devs e acelere
+    na direção dos seus objetivos</p>
+</main>
+CSS
+
+* {
+    margin: 0;
+}
+
+header {
+    height: 100px;
+    border: 7px dashed red;
+    background-color: rgb(55, 100, 50);
+
+=== Background-image-repeat
+
+Descrição
+Para adicionar uma imagem como background podemos usar a propriedade background-image
+Por padrão a imagem vai se repetir e podemos modificar essa opção usando a propriedade background-repeat
+
+Y vertical
+X horizontal
+/* Values */
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+background-repeat: repeat;
+background-repeat: space;
+background-repeat: round;
+background-repeat: no-repeat;
+
+/* Podedmos usar 2 valores: horizontal | vertical */
+background-repeat: repeat space;
+background-repeat: repeat repeat;
+background-repeat: round space;
+background-repeat: no-repeat round;
+
+==== Background-position
+
+
+
+Descrição
+Com a propriedade background-position podemos mudar a posição da imagem do background.
+
+/* Pricipais valores */
+background-position: top;
+background-position: bottom;
+background-position: left;
+background-position: right;
+background-position: center;
+
+=====Background-size
+
+Descrição
+Para mudar o tamanho da imagem do background usamos a propriedade background-size.
+
+/* Values */
+background-size: cover; se estiga e cobre toda a caixa
+background-size: contain;fica dentro da caixa
+
+/* Podemos usar 2 valores, o primeiro é para a largura da imagem e o segundo é para a altura */
+background-size: 40% auto;
+background-size: 2em 25%;
+background-size: auto 8px;
+background-size: auto auto;
+
+
+=======Background-origin-clip
+
+Descrição
+A propriedade background-origin é quem define o ponto de origem de uma imagem específica.
+/* Principais valores */
+background-origin: border-box;
+background-origin: padding-box;
+background-origin: content-box;
+O background-clip define se a cor ou imagem do background iniciam debaixo de sua área de borda, preenchimento ou conteúdo.
+/* Principais valores */
+background-clip: border-box;
+background-clip: padding-box;
+background-clip: content-box;
+background-clip: text;
+
+==== Background-attachment
+
+Descrição
+A propriedade background-attachment determina se a posição da imagem vai ser fixa ou se vai rolar junto com o conteúdo.
+
+/* Principais valores */
+background-attachment: scroll; mexe
+background-attachment: fixed; fixo
+background-attachment: local; 
+
+====Shorthand do background
+
+Descrição
+Podemos usar o shorthand background para definir todos os valores do background
+
+Seguir smepre a ordem acima do curso
+
+==
+Gradient
+
+Descrição
+
+linear-gradient() é a função usada para criar gradient linear com o CSS.
+background: linear-gradient(45deg, red, yellow) angulo cor inicial cor final
+radial-gradient() é a função usada para criar gradient circular.
+background: radial-gradient(green, red, yellow)
+background: radial-gradient(rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.2))
+
+=== Múltiplos valores
+
+Descrição
+Podemos aplicar múltiplos backgrounds em um mesmo elemento, podendo ter cor sólida, gradiente ou imagem. Para isso basta separar por vírgula cada background.
+
+==== Video proprio
+
+Video> Tag controls apos o src para aparecer controles
+se não pegar usar <source src="">  e Type video/mp4 
+
+dentro da tag video
+
+autoplay, pdoe por largura, altura etc
+preload para ir carregando
+loop
+
+Se n pegar usar tag P com mensagem
+
+Poster> poe imagem de fundo antes do inicio do video
+
+===== Audio
+
+Audio> Comando parecidos com os de videos
+
+==== trazer audio e video mapa etc
+
+iframe > pega direto do youtube
+
+
+=== formulario
+
+
+<form action="">
+   
+    <fieldset>
+
+        <legend>Contato</legend>
+
+        <label for="name">Nome</label>
+        <br> 
+        <input id="name" type="text" name="name">
+<br>
+<br>
+        <label for="email">email</label>
+        <br>
+        <input id="email" type="email" name="email">
+        <br>
+        <br>
+
+         <label for="message">Mensagem</label>
+         <br>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+<br>
+<br>
+        <button type="submit">Enviar</button>
+
+    </fieldset>
+    
+
+</form>
+
+
+=== JAVA SCRIPT
+
+Comentario // ou /*
+
+
+=== strings
+O tipo de dados String consiste em uma cadeia de caracteres, ou seja, textos. Para denotar string no JavaScript são usados aspas duplas ( " " ), aspas simples ( ' ' ) e template literals ou template strings ( ), template literals permitem textos multilinhas e expressões de linguagem com os caracteres ${ }, por exemplo: console.log(A soma de duas unidades é ${1+1}), já as outras não, por exemplo: console.log("Isso é um texto").
+
+== Number
+Descrição
+No JavaScript temos 4 tipos de números, os inteiros (por exemplo: 13), os reais ou float (por exemplo: 83.1), o Not a Number (NaN) e o infinito (Infinity).
+
+==Boolean
+Descrição
+No JavaScript, um dado boolean pode ter apenas 2 valores, verdadeiro (true) e falso (false).
+
+==Undefined vs null
+Descrição
+No JavaScript temos o tipo de dados Undefined, que representa valores indefinidos, e o tipo de dados null, que são muitas vezes confundidos. A diferença dos dois é que null é considerado como um objeto vazio, ou seja, algo indefinido não existe, já algo null existe mas não tem valor algum.
+
+==Object
+Descrição
+O tipo de dado Object é estrutural, contendo atributos, ou propriedades, e métodos, ou funcionalidades. Um objeto é denotado com os caracteres { }, atributos e métodos com nome: valor . Por exemplo { nome: "João", idade: 20 }.
+
+===Array
+Descrição
+O tipo de dados Array, ou vetor, também é estrutural, e consiste em uma lista de dados agrupados, um Array é denotado com os caracteres [ ] , por exemplo: [ "Leite", "Ovos", "Manteiga", 1, 2 ] .
+
+***Conclusão
+Descrição
+Conforme o ECMAScript Standard (o padrão do orgão que padroniza o JavaScript) temos 9 tipos de dados organizados em 4 categorias: Primitive, Primitive Value, Structural e Structural Primitive. Os primitivos são: String, Number, Boolean, Undefined, Symbol, BigInt. Os estruturais são: Object e Function. Além destes, temos o primitivo estrutural que consiste apenas no dado null
+
+
+==== Conhecendo as variáveis
+Descrição
+Para entender variáveis podemos pensar nelas como nomes simbólicos para algum valor, atalhos de código ou identificadores. Para criar uma variável, podemos usar uma das palavras reservadas: var, let e const, por exemplo: var clima = "quente", onde var é a palavra que simboliza a criação da variável, clima é o nome da variável, o sinal de igual denota que a variável está recebendo um valor e "quente" é a string que está sendo recebida. As variáveis declaradas com "var" e "let" podem ter seu valor mudado, já a const não.
+
+==Scope e var
+Descrição
+O Scope ou Escopo determina a visibilidade de uma variável em um código, e para entender scope precisamos primeiramente entender block statement, que é o código presente dentro de chaves. O escopo do var é global, ou seja, uma variável declarada com var poderá ser usada em todo o código.
+
+==Tipos dinâmicos
+Descrição
+O JavaScript é uma linguagem fracamente tipada e dinâmica, ou seja, ao declarar uma variável não é necessário estabelecer um tipo específico e o tipo do valor da variável pode mudar conforme o código.
+
+===Scope e var
+Descrição
+O Scope ou Escopo determina a visibilidade de uma variável em um código, e para entender scope precisamos primeiramente entender block statement, que é o código presente dentro de chaves. O escopo do var é global, ou seja, uma variável declarada com var poderá ser usada em todo o código.
+
+==Scope let e const
+Descrição
+Diferentemente de var, const e let são variáveis com escopo local, ou seja, só são visíveis no escopo onde foram criadas e em escopos interiores ao de criação. Em uma variável let, porém, pode-se alterar o valor em um escopo e o valor irá persistir no escopo de criação.
+
+==Nomeando variáveis
+
+Descrição
+Para nomearmos variáveis corretamente e de um jeito inteligente, precisamos saber de algumas coisas, como: JavaScript é case-sensitive (sensível à letras maiúsculas e minúsculas) e aceita a cadeia de caracteres Unicode, podendo receber acentuações. Em um nome de variável em JS você pode: Iniciar com caracteres especiais, iniciar com letras e colocar acentos, lembrando sempre que letras maiúsculas e minúsculas fazem a diferença. Em contraste, você não pode: Iniciar com números e colocar espaços vazios. Idealmente você deve colocar nomes significativos, que fazem sentido na aplicação, explicando o que a variável é, usando camel case, onde a primeira palavra de uma frase é toda minúscula, e as subsequentes não se separam por espaço e tem a primeira letra maiúscula, por exemplo: oNomeDessaVariável, e usar nomes em inglês.
+
+
+
+

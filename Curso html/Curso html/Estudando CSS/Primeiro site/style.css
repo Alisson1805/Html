@@ -1,0 +1,65 @@
+iframe{
+    width: 100%;
+}
+main{
+    min-width: 320px ;
+    max-width: 1920px;
+}
+body{
+    background-color: #3A01DF;
+}
+*{
+    margin: 0px;
+    padding: opx;
+}
+.body{
+    height: 100vh;
+    margin: 0;
+}
+.banner{
+    
+    height: 100%;
+    width: 100% ;
+    min-width: 320px ;
+    max-width: 1920px;
+
+}
+.registrar{
+    position: fixed;
+  
+ 
+ }
+ .login{
+    position: fixed;
+     left: 100px;
+    
+ }
+.botao{
+    font-family: arial;
+    font-size: 10px; /* tamanho do fundo*/
+    text-transform: uppercase; /* sempre maiusculo*/
+    font-weight: 800; /* negrito tamanho letra*/
+    border: none; /* remove bordas*/
+    padding: 10px;
+    cursor: pointer; /* cursos mouse*/
+    text-decoration: none; /* tirar undrline*/
+
+}
+.btn-color{
+    background:#341933;
+     color: #fff;
+     box-shadow: 0 5px 0 #1e111d; /* caixa de tras*/
+
+}
+
+.btn-color:houver{
+    background:#1e111d;
+     color:#fff;
+     box-shadow: 0 5px 0 #000000; /* caixa de tras*/
+
+}
+.btn-color:active{
+
+    top: 5px;
+    box-shadow:none
+}
